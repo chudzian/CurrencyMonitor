@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CurrencyMonitor</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="currency">currency</string>
+    <string name="value">value</string>
+    <string name="date">date</string>
 </resources>
