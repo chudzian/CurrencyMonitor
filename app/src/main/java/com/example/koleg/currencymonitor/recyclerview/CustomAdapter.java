@@ -11,15 +11,15 @@ import android.widget.TextView;
 
 import com.example.koleg.currencymonitor.activities.DetailActivity;
 import com.example.koleg.currencymonitor.R;
-import com.example.koleg.currencymonitor.model.Fixer;
+import com.example.koleg.currencymonitor.model.Currency;
 
 import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
-    private List<Fixer.Currency> currencies;
+    private List<Currency> currencies;
 
 
-    public CustomAdapter(List<Fixer.Currency> currencies) {
+    public CustomAdapter(List<Currency> currencies) {
         this.currencies = currencies;
     }
 

@@ -6,12 +6,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import com.example.koleg.currencymonitor.model.Currency;
 import com.example.koleg.currencymonitor.recyclerview.EndlessRecyclerViewScrollListener;
 import com.example.koleg.currencymonitor.R;
 import com.example.koleg.currencymonitor.recyclerview.CustomAdapter;
 import com.example.koleg.currencymonitor.model.Fixer;
 import com.example.koleg.currencymonitor.model.FixerService;
 import com.example.koleg.currencymonitor.model.ServiceGenerator;
+import com.example.koleg.currencymonitor.utils.InjectorUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private EndlessRecyclerViewScrollListener scollListener;
-    private List<Fixer.Currency> currencies;
+    private List<Currency> currencies;
     private CustomAdapter adapter;
     private Calendar cal;
     private SimpleDateFormat sdf;
